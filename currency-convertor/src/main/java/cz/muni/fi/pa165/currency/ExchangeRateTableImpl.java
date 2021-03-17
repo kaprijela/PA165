@@ -1,8 +1,10 @@
 package cz.muni.fi.pa165.currency;
 
+import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.util.Currency;
 
+@Component
 public class ExchangeRateTableImpl implements ExchangeRateTable {
     @Override
     public BigDecimal getExchangeRate(Currency sourceCurrency, Currency targetCurrency) {
