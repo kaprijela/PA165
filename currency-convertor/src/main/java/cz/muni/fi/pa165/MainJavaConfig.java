@@ -8,11 +8,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import java.math.BigDecimal;
 import java.util.Currency;
 
 @Configuration
+@EnableAspectJAutoProxy
 public class MainJavaConfig {
     @Bean
     public ExchangeRateTable getExchangeRateTable() {
